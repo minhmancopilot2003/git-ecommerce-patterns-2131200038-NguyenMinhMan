@@ -3,6 +3,12 @@ class Product {
         this.name = details.name || 'Generic Product';
         this.price = details.price || 0;
     }
+    getPrice() {
+        return this.price;
+    }
+    getDescription() {
+        return this.name;
+    }
     describe() {
         console.log(`${this.name} - $${this.price}`);
     }
